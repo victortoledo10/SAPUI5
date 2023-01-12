@@ -1,7 +1,14 @@
-<mvc:View controllerName="es.victor.sapui5cero.controller.Main"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
-    </Page>
+<mvc:View controllerName="es.victor.sapui5cero.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:ui="sap.ui.unified">
+ 	<Shell>
+		<App class="myAppDemoWT">
+			<pages>
+				<Page title="{i18n>homePageTitle}">
+					<content>
+                         <!-- se pega el fragmento -->
+						<mvc:XMLView viewName="es.victor.sapui5cero.view.HelloPanel"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
 </mvc:View>
