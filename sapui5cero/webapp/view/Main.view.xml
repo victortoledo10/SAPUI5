@@ -6,6 +6,7 @@
 					<content>
                          <!-- se pega el fragmento -->
 						<mvc:XMLView viewName="es.victor.sapui5cero.view.HelloPanel"/>
+						<mvc:XMLView viewName="es.victor.sapui5cero.view.InvoiceList"/>
 					</content>
 				</Page>
 			</pages>
