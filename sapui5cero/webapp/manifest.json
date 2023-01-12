@@ -17,7 +17,7 @@
     },
     "dataSources": {
       "mainService": {
-        "uri": "/sap/opu/odata/",
+        "uri": "/V2/Northwind/Northwind.svc/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -74,10 +74,16 @@
         "preload": true,
         "settings": {}
       },
-      "invoice": {
+      "data": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {}
+      },
+      "invoiceLocal": {
       "type": "sap.ui.model.json.JSONModel",
       "uri": "Invoices.json"
       }
+      
     },
     "resources": {
       "css": [
